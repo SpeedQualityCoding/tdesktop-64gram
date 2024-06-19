@@ -37,6 +37,10 @@ on:
       - 'Telegram/SourceFiles/platform/linux/**'
       - 'Telegram/configure.bat'
 
+concurrency:
+    group: mac_packaged
+    cancel-in-progress: true
+
 jobs:
 
   macos:

@@ -39,6 +39,10 @@ on:
       - 'Telegram/configure.sh'
       - 'Telegram/Telegram.plist'
 
+concurrency:
+    group: windows
+    cancel-in-progress: true
+
 jobs:
 
   windows:

@@ -38,6 +38,10 @@ on:
       - 'Telegram/configure.bat'
       - 'Telegram/Telegram.plist'
 
+concurrency:
+    group: linux
+    cancel-in-progress: true
+
 jobs:
 
   linux:

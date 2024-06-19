@@ -37,6 +37,10 @@ on:
       - 'Telegram/configure.bat'
       - 'Telegram/Telegram.plist'
 
+concurrency:
+    group: snap
+    cancel-in-progress: true
+
 jobs:
 
   snap:
