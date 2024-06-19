@@ -1,6 +1,7 @@
 name: Windows.
 
 on:
+  workflow_dispatch:
   push:
     paths-ignore:
       - 'docs/**'
@@ -42,7 +43,7 @@ jobs:
 
   windows:
     name: Windows
-    runs-on: windows-2022
+    runs-on: windows-latest-xl
 
     strategy:
       matrix:

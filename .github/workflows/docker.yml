@@ -1,6 +1,7 @@
 name: Docker.
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - '.github/workflows/docker.yml'
@@ -13,7 +14,7 @@ on:
 jobs:
   docker:
     name: Ubuntu
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-xl
 
     env:
       IMAGE_TAG: ghcr.io/${{ github.repository }}/centos_env:latest

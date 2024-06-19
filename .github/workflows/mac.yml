@@ -1,6 +1,7 @@
 name: MacOS.
 
 on:
+  workflow_dispatch:
   push:
     paths-ignore:
       - 'docs/**'
@@ -40,7 +41,7 @@ jobs:
 
   macos:
     name: MacOS
-    runs-on: macos-13
+    runs-on: macos-latest-xl
 
     strategy:
       matrix:
